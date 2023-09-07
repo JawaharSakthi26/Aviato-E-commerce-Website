@@ -37,7 +37,7 @@ class RegistrationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'email.welcome',
+            view: 'email.Email',
         );
     }
 
