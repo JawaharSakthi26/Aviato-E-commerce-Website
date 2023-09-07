@@ -56,7 +56,7 @@ trait CreateTrait{
             'order_id' => $order->id,
             'total_items' => $totalItems,
             'total_price' => $paymentIntent->amount,
-            'payment_status' => 'success',
+            'payment_status' => $paymentIntent->status,
         ]);
     }
 
